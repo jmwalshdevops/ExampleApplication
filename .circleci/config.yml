@@ -8,11 +8,11 @@ workflows:
           filters:
             branches:
               only:
-                - main:
+                - main
 
 jobs:
   build:
-    working_directory: ~ExampleApplication
+    working_directory: ~/ExampleApplication
     docker:
       - image: circleci/node:10.16.3
     steps:
