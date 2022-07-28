@@ -59,8 +59,8 @@ jobs:
           name: copy-server-cert-and-private-key-across
           command: docker cp ./privatekey.pem integration_app:/privatekey.pem; docker cp ./server.crt integration_app:/server.crt
       - run:
-        name: start-docker-container
-        command: docker start integration_app
+          name: start-docker-container
+          command: docker start integration_app
 
   deploy:
     docker:
